@@ -13,10 +13,11 @@ router.ws('/test', (ws, req) => {
       clearInterval(interval)
     }
   }, 1000)
-
   ws.on('message', msg => {
     ws.send(msg)
   })
 })
+
+
 
 module.exports = router

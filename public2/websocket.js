@@ -4,7 +4,7 @@ const exit = document.getElementById('exit')
 const receiveBox = document.getElementById('receive-box')
 
 // const ws = new WebSocket('ws://127.0.0.1:3000/websocket/test')
-const ws = new WebSocket('ws://127.0.0.1:3000/123')
+const ws = new WebSocket('ws://127.0.0.1:3000/12345')
 ws.onopen = e => {
   console.log(`WebSocket 连接状态： ${ws.readyState}`)
 }
@@ -27,9 +27,9 @@ ws.onclose = data => {
 sendBtn.onclick = () => {
   let params = {
     from: '',
-    to: 12345,
-    type: 'ttttt',
-    message: '我要发给unity...'
+    to: 123,
+    type: 'ttttt222',
+    message: '我要发给js...'
   };
   ws.send(JSON.stringify(params));
 }

@@ -1,0 +1,10 @@
+*.iml
+*.log
+
+*-lock.json
+node_modules
+
+mocks/
+.idea/
+.cscode/
+
